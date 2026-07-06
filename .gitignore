@@ -1,0 +1,12 @@
+# Model weights & checkpoints (too large for GitHub)
+*.gguf
+*.bin
+*.pt
+*.pth
+*.npz
+*.safetensors
+models/checkpoints/
+
+# Python
+__pycache__/
+*.pyc
