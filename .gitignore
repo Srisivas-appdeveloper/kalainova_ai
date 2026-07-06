@@ -10,3 +10,6 @@ models/checkpoints/
 # Python
 __pycache__/
 *.pyc
+
+# Large data sample (over GitHub 100MB limit)
+dart_sample.txt
