@@ -95,7 +95,7 @@ def get_lr(step):
         return LR * (step + 1) / WARMUP_STEPS
     progress = (step - WARMUP_STEPS) / max(1, MAX_STEPS - WARMUP_STEPS)
     progress = min(progress, 1.0)
-    return 0.5 * LR * (1 + np.cos(np.pi * progress))
+    return float(0.5 * LR * (1 + np.cos(np.pi * progress)))
 
 
 def main():
