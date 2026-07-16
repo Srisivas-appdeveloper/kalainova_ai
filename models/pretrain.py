@@ -42,8 +42,8 @@ from model import KalaiNovaModel
 # ---------------- config ----------------
 TOKENIZER_PATH = "kalainova_tokenizer/tokenizer.json"
 CHECKPOINT_DIR = "checkpoints_pretrain"
-CONTEXT_LENGTH = 512      # << model.py's max_seq_len=1024; kept smaller here
-                          #    for Mac MPS memory/throughput at this data scale
+CONTEXT_LENGTH = 1024     # matches model.py's max_seq_len -- the full RoPE
+                          # cache range is already precomputed for this
 BATCH_SIZE = 8
 MAX_STEPS = 6000
 LR = 3e-4

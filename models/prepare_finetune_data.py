@@ -28,7 +28,7 @@ from data_quality import (
 
 TOKENIZER_PATH = "kalainova_tokenizer/tokenizer.json"
 OUT_PATH = "flutter_finetune.npz"
-MAX_LEN = 512
+MAX_LEN = 1024   # matches pretrain.py's CONTEXT_LENGTH / model.py's max_seq_len
 
 SOURCES = [
     ("flutter_training_data.jsonl", iter_question_answer_jsonl),
