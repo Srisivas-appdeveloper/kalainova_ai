@@ -1,0 +1,6 @@
+# From-scratch pipeline (models/pretrain.py, prepare_finetune_data.py,
+# finetune.py, testqa.py). On Apple Silicon, `pip install torch` pulls a
+# build with MPS support automatically -- no separate index/URL needed.
+torch>=2.2
+tokenizers>=0.19
+numpy>=1.26
